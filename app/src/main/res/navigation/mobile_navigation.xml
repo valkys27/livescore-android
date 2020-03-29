@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/mobile_navigation"
+  app:startDestination="@+id/navigation_live">
+
+  <fragment
+    android:id="@+id/navigation_live"
+    android:label="@string/title_live"
+    android:name="eu.upce.livescore.match.view.fragments.LiveFragment"
+    tools:layout="@layout/list"/>
+
+  <fragment
+    android:id="@+id/navigation_matches"
+    android:label="@string/title_matches"
+    android:name="eu.upce.livescore.match.view.fragments.MatchesFragment"
+    tools:layout="@layout/list"/>
+
+  <fragment
+    android:id="@+id/navigation_tables"
+    android:label="@string/title_tables"
+    android:name="eu.upce.livescore.league.view.TablesFragment"
+    tools:layout="@layout/fragment_tables"/>
+</navigation>

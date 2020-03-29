@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Match</string>
+  <string name="postponed_match">Canc.</string>
+  <string name="finished_match">End</string>
+</resources>

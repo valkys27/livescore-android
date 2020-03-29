@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':common', ':match', ':league'
 rootProject.name='Live Score'
