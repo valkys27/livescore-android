@@ -1,4 +1,4 @@
-package eu.upce.livescore.common.utils.svg;
+package eu.upce.livescore.common.svg;
 
 import android.graphics.Picture;
 import android.graphics.drawable.PictureDrawable;
@@ -7,7 +7,7 @@ import com.bumptech.glide.load.resource.SimpleResource;
 import com.bumptech.glide.load.resource.transcode.ResourceTranscoder;
 import com.caverock.androidsvg.SVG;
 
-public class SvgDrawableTranscoder implements ResourceTranscoder<SVG, PictureDrawable> {
+class SvgDrawableTranscoder implements ResourceTranscoder<SVG, PictureDrawable> {
   @Override
   public Resource<PictureDrawable> transcode(Resource<SVG> toTranscode) {
     SVG svg = toTranscode.get();

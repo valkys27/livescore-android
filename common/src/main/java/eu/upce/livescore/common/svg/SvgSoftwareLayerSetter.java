@@ -1,4 +1,4 @@
-package eu.upce.livescore.common.utils.svg;
+package eu.upce.livescore.common.svg;
 
 import android.annotation.TargetApi;
 import android.graphics.drawable.PictureDrawable;
@@ -9,7 +9,7 @@ import com.bumptech.glide.request.target.ImageViewTarget;
 import com.bumptech.glide.request.target.Target;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class SvgSoftwareLayerSetter<T> implements RequestListener<T, PictureDrawable> {
+class SvgSoftwareLayerSetter<T> implements RequestListener<T, PictureDrawable> {
 
   @Override
   public boolean onException(Exception e, T model, Target<PictureDrawable> target, boolean isFirstResource) {

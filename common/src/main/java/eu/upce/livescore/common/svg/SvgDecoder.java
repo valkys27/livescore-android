@@ -1,4 +1,4 @@
-package eu.upce.livescore.common.utils.svg;
+package eu.upce.livescore.common.svg;
 
 import com.bumptech.glide.load.ResourceDecoder;
 import com.bumptech.glide.load.engine.Resource;
@@ -8,7 +8,7 @@ import com.caverock.androidsvg.SVGParseException;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class SvgDecoder implements ResourceDecoder<InputStream, SVG> {
+class SvgDecoder implements ResourceDecoder<InputStream, SVG> {
   public Resource<SVG> decode(InputStream source, int width, int height) throws IOException {
     try {
       SVG svg = SVG.getFromInputStream(source);

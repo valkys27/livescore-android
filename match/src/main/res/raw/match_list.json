@@ -1,0 +1,59 @@
+[
+  {
+    "dateTime": "2020-03-11T19:45:00Z",
+    "homeTeam": {
+      "name": "St Mirren",
+      "goals": 1
+    },
+    "awayTeam": {
+      "name": "Hearts",
+      "goals": 0
+    },
+    "time": "57'"
+  },
+  {
+    "dateTime": "2020-03-08T12:00:00Z",
+    "homeTeam": {
+      "name": "Ross County",
+      "goals": 0
+    },
+    "awayTeam": {
+      "name": "Rangers",
+      "goals": 1
+    },
+    "time": "Finished"
+  },
+  {
+    "dateTime": "2020-03-07T15:00:00Z",
+    "homeTeam": {
+      "name": "St Johnstone",
+      "goals": 1
+    },
+    "awayTeam": {
+      "name": "Livingston",
+      "goals": 0
+    },
+    "time": "Finished"
+  },
+  {
+    "dateTime": "2020-03-15T12:00:00Z",
+    "homeTeam": {
+      "name": "Rangers",
+      "goals": 0
+    },
+    "awayTeam": {
+      "name": "Celtic",
+      "goals": 0
+    },
+    "time": "Postponed"
+  },
+  {
+    "dateTime": "2020-04-03T18:45:00Z",
+    "homeTeam": {
+      "name": "Aberdeen"
+    },
+    "awayTeam": {
+      "name": "Hearts"
+    }
+  }
+]

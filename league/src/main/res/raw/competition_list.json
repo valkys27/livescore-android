@@ -1,0 +1,62 @@
+[
+  {
+    "name": "English Premier League",
+    "country": {
+      "name": "England"
+    }
+  },
+  {
+    "name": "English League Championship",
+    "country": {
+      "name": "England"
+    }
+  },
+  {
+    "name": "Scottish Premier League",
+    "country": {
+      "name": "Scotland"
+    }
+  },
+  {
+    "name": "Bundesliga",
+    "country": {
+      "name": "Germany"
+    }
+  },
+  {
+    "name": "Serie A",
+    "country": {
+      "name": "Italy"
+    }
+  },
+  {
+    "name": "Serie B",
+    "country": {
+      "name": "Italy"
+    }
+  },
+  {
+    "name": "Ligue 1",
+    "country": {
+      "name": "France"
+    }
+  },
+  {
+    "name": "La Liga",
+    "country": {
+      "name": "Spain"
+    }
+  },
+  {
+    "name": "Superleague Greece",
+    "country": {
+      "name": "Greece"
+    }
+  },
+  {
+    "name": "Eredivisie",
+    "country": {
+      "name": "Holland"
+    }
+  }
+]

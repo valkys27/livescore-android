@@ -1,0 +1,110 @@
+[
+  {
+    "team": {
+      "name": "Celtic"
+    },
+    "played": 30,
+    "goalsFor": 89,
+    "goalsAgainst": 19,
+    "points": 80
+  },
+  {
+    "team": {
+      "name": "Rangers"
+    },
+    "played": 29,
+    "goalsFor": 64,
+    "goalsAgainst": 19,
+    "points": 67
+  },
+  {
+    "team": {
+      "name": "Motherwell"
+    },
+    "played": 30,
+    "goalsFor": 41,
+    "goalsAgainst": 38,
+    "points": 46
+  },
+  {
+    "team": {
+      "name": "Aberdeen"
+    },
+    "played": 30,
+    "goalsFor": 40,
+    "goalsAgainst": 36,
+    "points": 45
+  },
+  {
+    "team": {
+      "name": "Livingston"
+    },
+    "played": 30,
+    "goalsFor": 41,
+    "goalsAgainst": 39,
+    "points": 39
+  },
+  {
+    "team": {
+      "name": "Hibernian"
+    },
+    "played": 30,
+    "goalsFor": 42,
+    "goalsAgainst": 49,
+    "points": 37
+  },
+  {
+    "team": {
+      "name": "St Johnstone"
+    },
+    "played": 29,
+    "goalsFor": 28,
+    "goalsAgainst": 46,
+    "points": 36
+  },
+  {
+    "team": {
+      "name": "Kilmarnock"
+    },
+    "played": 30,
+    "goalsFor": 31,
+    "goalsAgainst": 41,
+    "points": 33
+  },
+  {
+    "team": {
+      "name": "St Mirren"
+    },
+    "played": 30,
+    "goalsFor": 24,
+    "goalsAgainst": 41,
+    "points": 29
+  },
+  {
+    "team": {
+      "name": "Ross County"
+    },
+    "played": 30,
+    "goalsFor": 29,
+    "goalsAgainst": 60,
+    "points": 29
+  },
+  {
+    "team": {
+      "name": "Hamilton"
+    },
+    "played": 30,
+    "goalsFor": 30,
+    "goalsAgainst": 50,
+    "points": 27
+  },
+  {
+    "team": {
+      "name": "Hearts"
+    },
+    "played": 30,
+    "goalsFor": 31,
+    "goalsAgainst": 52,
+    "points": 23
+  }
+]

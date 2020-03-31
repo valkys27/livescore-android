@@ -8,13 +8,13 @@
   <fragment
     android:id="@+id/navigation_live"
     android:label="@string/title_live"
-    android:name="eu.upce.livescore.match.view.fragments.LiveFragment"
+    android:name="eu.upce.livescore.match.view.fragments.list.LiveFragment"
     tools:layout="@layout/list"/>
 
   <fragment
     android:id="@+id/navigation_matches"
     android:label="@string/title_matches"
-    android:name="eu.upce.livescore.match.view.fragments.MatchesFragment"
+    android:name="eu.upce.livescore.match.view.fragments.list.MatchesFragment"
     tools:layout="@layout/list"/>
 
   <fragment

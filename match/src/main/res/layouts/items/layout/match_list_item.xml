@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="5dp">
+
+  <TextView
+    android:id="@+id/tvTime"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="19:00"/>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/tvTime"
+    app:layout_constraintTop_toTopOf="parent">
+    <TextView
+      android:id="@+id/tvHomeTeam"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      tools:text="St Mirren"/>
+    <TextView
+      android:id="@+id/tvAwayTeam"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      tools:text="Hearts"/>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="15dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/ibSubscribe"
+    app:layout_constraintTop_toTopOf="parent">
+    <TextView
+      android:id="@+id/tvHomeTeamGoals"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:textStyle="bold"
+      tools:text="0"/>
+    <TextView
+      android:id="@+id/tvAwayTeamGoals"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:textStyle="bold"
+      tools:text="1"/>
+  </LinearLayout>
+
+  <ImageButton
+    android:id="@+id/ibSubscribe"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="10dp"
+    android:contentDescription="@string/add_to_subscribed"
+    android:background="@android:color/transparent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@android:drawable/btn_star_big_off"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

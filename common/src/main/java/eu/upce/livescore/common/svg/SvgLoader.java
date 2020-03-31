@@ -1,4 +1,4 @@
-package eu.upce.livescore.common.utils.svg;
+package eu.upce.livescore.common.svg;
 
 import android.content.Context;
 import android.graphics.drawable.PictureDrawable;
@@ -13,16 +13,42 @@ import com.bumptech.glide.load.resource.file.FileToStreamDecoder;
 import com.caverock.androidsvg.SVG;
 import java.io.File;
 import java.io.InputStream;
+import java.util.Objects;
 
-public class SvgParser {
+public class SvgLoader {
 
-  private final Context context;
-
+  private Context context;
   private GenericRequestBuilder<Uri, InputStream, SVG, PictureDrawable> requestBuilder;
 
-  public SvgParser(Context context) {
+  private SvgLoader(Context context) {
     this.context = context;
     createRequestBuilder();
+  }
+
+  public static SvgLoader with(Context context) {
+    return new SvgLoader(context);
+  }
+
+  public SvgLoader setPlaceHolder(int placeHolderLoading, int placeHolderError){
+    requestBuilder.placeholder(placeHolderLoading)
+        .error(placeHolderError);
+    return this;
+  }
+
+  public void load(String url, ImageView imageView){
+    Uri uri = Uri.parse(url);
+    load(uri, imageView);
+  }
+
+  public void load(Uri uri, ImageView imageView){
+    requestBuilder
+        .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+        .load(uri)
+        .into(imageView);
+  }
+
+  public void close(){
+    clearCache();
   }
 
   private void createRequestBuilder() {
@@ -32,30 +58,18 @@ public class SvgParser {
         .as(SVG.class)
         .transcode(new SvgDrawableTranscoder(), PictureDrawable.class)
         .sourceEncoder(new StreamEncoder())
-        .cacheDecoder(new FileToStreamDecoder<SVG>(new SvgDecoder()))
+        .cacheDecoder(new FileToStreamDecoder<>(new SvgDecoder()))
         .decoder(new SvgDecoder())
         .animate(android.R.anim.fade_in)
         .listener(new SvgSoftwareLayerSetter<>());
   }
 
-  public void setPlaceHolder(int placeHolderLoding, int placeHolderError){
-    requestBuilder.placeholder(placeHolderLoding)
-        .error(placeHolderError);
-  }
 
-
-  public void loadImage(Uri uri, ImageView imageView) {
-    requestBuilder
-        .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-        .load(uri)
-        .into(imageView);
-  }
-
-  public void clearCache() {
+  private void clearCache() {
     Glide.get(context).clearMemory();
     File cacheDir = Glide.getPhotoCacheDir(context);
     if (cacheDir.isDirectory()) {
-      for (File child : cacheDir.listFiles()) {
+      for (File child : Objects.requireNonNull(cacheDir.listFiles())) {
         if (!child.delete()) {
           Log.w(TAG, "cannot delete: " + child);
         }
@@ -63,6 +77,5 @@ public class SvgParser {
     }
   }
 
-  private static final String TAG = "SvgParser";
+  private static final String TAG = "SvgLoader";
 }
-
